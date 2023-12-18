@@ -13,5 +13,11 @@ pipeline {
       }
     }
 
+    stage('push_image') {
+      steps {
+        sh 'docker login -u zakirovrufat -p $token'
+      }
+    }
+
   }
 }
