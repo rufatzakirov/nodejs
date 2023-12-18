@@ -14,6 +14,9 @@ pipeline {
     }
 
     stage('push_image') {
+      environment {
+        token = ''
+      }
       steps {
         sh 'docker login -u zakirovrufat -p $token'
       }
