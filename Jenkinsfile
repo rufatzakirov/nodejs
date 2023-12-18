@@ -7,5 +7,11 @@ pipeline {
       }
     }
 
+    stage('') {
+      steps {
+        sh 'docker build -t zakirovrufat/$JOB_NAME:$BUILD_ID'
+      }
+    }
+
   }
 }
