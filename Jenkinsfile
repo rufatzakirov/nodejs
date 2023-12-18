@@ -7,7 +7,7 @@ pipeline {
       }
     }
 
-    stage('error') {
+    stage('build_image') {
       steps {
         sh 'docker build -t zakirovrufat/$JOB_NAME:$BUILD_ID .'
       }
